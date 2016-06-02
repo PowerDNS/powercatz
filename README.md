@@ -38,3 +38,5 @@ Shortly after this you should see `pdns-slave` AXFRing the two zones in.
 After this, if you update the master config (http://jpmens.net/2016/05/24/catalog-zones-are-coming-to-bind-9-11/ is a good guide although I did not configure rndc), and rerun `./lolcatz.lua`, you should see zones being added and removed as specified.
 
 NOTE: I only did the `PTR` part of the draft, this is just a proof of concept. There are lots of edge cases. It should probably be a daemon, not a one-shot script. Once daemonized, it should probably monitor the SOA of the slaved zone and not fetch the whole zone every second. The configs in this repo do not all correctly source NOTIFY/AXFR from the right IPs, etc.
+
+TODO: implement the 'master' side of this - i.e. fetch list of zones for an account, and update the catalog zone with it, so slaves (be they BIND or PowerDNS or anything else that supports catalog zones) can pick that up.
