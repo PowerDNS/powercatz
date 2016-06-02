@@ -12,7 +12,7 @@ $ sudo pdns_server --config-dir=pdns-slave  # tty3
 
 You should see all three daemons starting up. `bind-slave` should sync the catalog zone and add the two zones listed in it. `pdns-slave` should sync the catalog zone.
 
-Then, run `./lolcatz.lua`, it should add two zones to pdns:
+Then, run `./lolcatz.lua` (the arguments, in order, are `<catalog zone name> <domains.account value for cataloged zones> <default master>`), it should add two zones to pdns:
 ```
 ./lolcatz.lua catalog.example.com catalog1 10.33.55.1
 Processing PTR da6275bc1e0221b29ff95c97da659e213086e6f8.zones.catalog.example.com.
