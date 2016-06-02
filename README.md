@@ -7,7 +7,7 @@ $ sqlite3 pdns-slave/powerdns.sqlite3 < ~/projects/powerdns/pdns/modules/gsqlite
 $ pdnsutil --config-dir=pdns-slave create-slave-zone catalog.example.com 10.33.55.1
 $ sudo named -g -c bind-master/named.conf   # tty1
 $ sudo named -g -c bind-slave/named.conf    # tty2
-$ sudo pdns_server --config-dir=pdns-slave
+$ sudo pdns_server --config-dir=pdns-slave  # tty3
 ```
 
 You should see all three daemons starting up. `bind-slave` should sync the catalog zone and add the two zones listed in it. `pdns-slave` should sync the catalog zone.
