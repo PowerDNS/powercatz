@@ -1,0 +1,8 @@
+@ 3600 SOA . . 1 86400 3600 86400 3600
+@ 3600 IN NS ns1.example.net.
+@ 3600 IN NS ns2.example.net.
+@ 3600 IN NS ns3.example.net.
+ns1 IN A 10.33.55.1
+ns2 IN A 10.33.55.2
+ns3 IN A 10.33.55.3
+

@@ -1,0 +1,5 @@
+@ 3600 SOA . . 7 86400 3600 86400 3600
+@ 3600 IN NS nop.
+version IN TXT "1"
+da6275bc1e0221b29ff95c97da659e213086e6f8.zones	PTR	example.net.
+2fcd737781dfde2e53ae10a5411e85adf20b6ae6.zones	PTR	example.org.
