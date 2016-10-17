@@ -2,7 +2,7 @@ This is a very quick stab at doing a PowerDNS-external implementation of BIND9 c
 
 To test:
 ```
-$ sudo ./ips.sh  # bring up 3 IPs for testing
+$ sudo ./ip.sh  # bring up 3 IPs for testing
 $ sqlite3 pdns-slave/powerdns.sqlite3 < ~/projects/powerdns/pdns/modules/gsqlite3backend/schema.sqlite3.sql
 $ pdnsutil --config-dir=pdns-slave create-slave-zone catalog.example.com 10.33.55.1
 $ sudo named -g -c bind-master/named.conf   # tty1
